@@ -24,15 +24,14 @@ public class Comment extends Model {
         this.postedAt = new Date();
     }
 
-/* ESTA PORCARIA NAO FUNCIONA!!! com validação*/
-    public static void postComment(Long postId, @Required String author, @Required String content) {
+public static void postComment(Long postId, @Required String author, @Required String content) {
     Post post = Post.findById(postId);
-    if(Validation.hasErrors()) {
-       //render("Application/show.html", post);
+    if(validation.hasErrors()) {
+        render("Application/show.html", post);
     }
     post.addComment(author, content);
-    //flash.success("Thanks for posting %s", author);
-    //show(postId);
+    flash.success("Thanks for posting %s", author);
+    show(postId);
 }
 
 }
