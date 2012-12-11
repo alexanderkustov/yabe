@@ -1,41 +1,48 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
- 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="pt">
     <head>
         <title>#{get 'title' /}</title>
         <meta http-equiv="Content-Type" content="text/html; charset=${_response_encoding}"/>
-        #{stylesheet src:"main.css" /}
+        #{stylesheet src:"bootstrap.css" /}
+        #{stylesheet src:"bootstrap-responsive.css" /}
         <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}" />
         #{script src:"jquery-1.4.2.min.js" /}
         #{script src:"jquery.tools-1.2.5.toolbox.expose.min.js" /}
+         #{script src:"bootstrap.min.js" /}
+         <style type="text/css">
+         body{background-color: #C0DEED;
+            }
+            .container{
+                margin-top: 20px;
+                background-color: rgba(255,255,255,0.5);
+                border-radius: 25px;}
+            </style>
     </head>
+
     <body>
 
-        <div id="header">
-            <div id="logo">
-                yabe.
+        <div class="span11" style="margin-left:120px;">
+             <div class="pull-right">
+                    <a href="@{Admin.index()}" class="btn">Login</a>
             </div>
-            <ul id="tools">
-                <li>
-                    <a href="@{Admin.index()}">Log in to write something</a>
-                </li>
-            </ul>
-            <div id="title">
-                <span class="about">About this blog</span>
-                <h1><a href="@{Application.index()}">${blogTitle}</a></h1>
-                <h2>${blogBaseline}</h2>
-            </div>
-        </div>
+
+
+<p>       <a href="@{Application.index()}"><img src="@{'/public/images/logo.png'}" style="height:64px; float:left; " /></a>
+       <h3> <a href="@{Application.index()}">${blogTitle}</a> - ${blogBaseline} </h3></p>
+
+</div>
+<div class="container">
+    <div class="span12">
 
         <div id="main">
             #{doLayout /}
         </div>
 
-        <p id="footer">
-            Yabe is a (not so) powerful blog engine built with the 
-            <a href="http://www.playframework.org">play framework</a>
-            as a tutorial application.
-        </p>
-
+        <br />
+        <footer style="text-align:center;">
+           Copyright Paulo Teixeira e Alexander Kustov
+        </footer>
+</div>
+</div>
     </body>
 </html>

@@ -1,19 +1,15 @@
-# You can specialize this file for each language.
-# For exemple, for french create a messages.fr file
-#
-
-title=Title
-content=Content
-postedAt=Posted at
-author=Author
-post=Related post
-tags=Tags set
-name=Common name
+title=Titulo
+content=Conteudo
+postedAt=Posto em
+author=Autor
+post=Relacionado
+tags=Tags
+name=Nome comum
 email=Email
 password=Password
-fullname=Full name
-isAdmin=User is admin
+fullname=Nome completo
+isAdmin=Utiliziador é admin
 
-secure.username=Your email:
-secure.password=Your password:
-secure.signin=Log in now
+secure.username=Email:
+secure.password=Password:
+secure.signin=Entra!
