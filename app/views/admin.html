@@ -5,20 +5,25 @@
         <meta http-equiv="Content-Type" content="text/html; charset=${_response_encoding}"/>
         #{get 'moreStyles' /}
         <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/bootstrap.css'}" />
+        <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/sample.css'}" />
+
         <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}" />
         <script src="@{'/public/javascripts/jquery-1.4.2.min.js'}"></script>
         <script src="@{'/public/javascripts/jquery.tools-1.2.5.toolbox.expose.min.js'}"></script>
+        <script src="@{'/public/javascripts/ckeditor.js'}"></script>
+
     </head>
     <body id="admin">
 
         <div id="header">
             <div id="logo">
-                <span>administration</span>
+                <span class="lead">Painel de Administração</span>
             </div>
             <ul id="tools">
-                <li>
-                    <a href="@{Secure.logout()}">Log out</a>
-                </li>
+
+                    <a href="@{Application.index()}">Home</a> |
+                      <a href="@{Secure.logout()}">Logout</a>
+
             </ul>
         </div>
 

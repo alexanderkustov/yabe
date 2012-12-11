@@ -27,7 +27,7 @@
     <p>
         #{field 'content'}
         <label>Write here:</label>
-        <textarea name="${field.name}">
+        <textarea class="ckeditor" name="${field.name}">
           ${post?.content}
         </textarea>
         <span class="error">#{error 'post.content'/}</span>

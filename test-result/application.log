@@ -1,41 +1,28 @@
-05 Nov 2012 11:29:04,235 INFO  ~ Starting C:\play204\yabe
-05 Nov 2012 11:29:05,456 WARN  ~ You're running Play! in DEV mode
-05 Nov 2012 11:29:05,617 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
-05 Nov 2012 11:29:39,661 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
-05 Nov 2012 11:29:41,283 INFO  ~ Application 'yay' is now started !
-05 Nov 2012 11:45:36,724 ERROR ~ 
-
-@6c8p7f4p6
-Internal Server Error (500) for request GET /@tests/init
-
-Compilation error (In /app/models/Post.java around line 15)
-The file /app/models/Post.java could not be compiled. Error raised is : string cannot be resolved to a type
-
-play.exceptions.CompilationException: string cannot be resolved to a type
-	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
-	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:676)
-	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:520)
-	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:282)
-	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:277)
-	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:322)
-	at play.Play.detectChanges(Play.java:614)
-	at play.Invoker$Invocation.init(Invoker.java:198)
-	at Invocation.HTTP Request(Play!)
-05 Nov 2012 11:45:36,964 ERROR ~ 
-
-@6c8p7f4pa
-Internal Server Error (500) for request GET /@tests?select=BasicTest.class
-
-Compilation error (In /app/models/Post.java around line 15)
-The file /app/models/Post.java could not be compiled. Error raised is : string cannot be resolved to a type
-
-play.exceptions.CompilationException: string cannot be resolved to a type
-	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
-	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:676)
-	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:520)
-	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:282)
-	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:277)
-	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:322)
-	at play.Play.detectChanges(Play.java:614)
-	at play.Invoker$Invocation.init(Invoker.java:198)
-	at Invocation.HTTP Request(Play!)
+11 Dez 2012 18:45:39,104 INFO  ~ Starting C:\play204\yabe
+11 Dez 2012 18:45:39,108 WARN  ~ Declaring modules in application.conf is deprecated. Use dependencies.yml instead (module.crud)
+11 Dez 2012 18:45:39,109 INFO  ~ Module crud is available (C:\play204\modules\crud)
+11 Dez 2012 18:45:39,109 WARN  ~ Declaring modules in application.conf is deprecated. Use dependencies.yml instead (module.secure)
+11 Dez 2012 18:45:39,110 INFO  ~ Module secure is available (C:\play204\modules\secure)
+11 Dez 2012 18:45:39,688 WARN  ~ You're running Play! in DEV mode
+11 Dez 2012 18:45:39,767 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+11 Dez 2012 18:45:47,796 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL
+11 Dez 2012 18:45:48,724 INFO  ~ Application 'Education 2.0' is now started !
+11 Dez 2012 18:46:56,438 ERROR ~ schema export unsuccessful
+org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-149]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:327)
+	at org.h2.message.DbException.get(DbException.java:167)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.message.DbException.get(DbException.java:133)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1333)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1308)
+	at org.h2.jdbc.JdbcConnection.getAutoCommit(JdbcConnection.java:380)
+	at com.mchange.v2.c3p0.impl.NewProxyConnection.getAutoCommit(NewProxyConnection.java:985)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:52)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:263)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.drop(SchemaExport.java:229)
+	at org.hibernate.impl.SessionFactoryImpl.close(SessionFactoryImpl.java:961)
+	at org.hibernate.ejb.EntityManagerFactoryImpl.close(EntityManagerFactoryImpl.java:127)
+	at play.db.jpa.JPAPlugin.onApplicationStop(JPAPlugin.java:299)
+	at play.plugins.PluginCollection.onApplicationStop(PluginCollection.java:492)
+	at play.Play.stop(Play.java:555)
+	at play.Play$1.run(Play.java:450)
