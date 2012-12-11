@@ -1,93 +1,95 @@
 # Test data
 
-User(bob):
-    email:          bob@gmail.com
+User(alex):
+    email:          alex@iscte.pt
     password:       secret
-    fullname:       Bob
+    fullname:       Alex
     isAdmin:        true
-    
-User(jeff):
-    email:          jeff@gmail.com
-    password:       secret
-    fullname:       Jeff    
-    
-User(paul):
-    email:          paul@gmail.com
-    password:       secret
-    fullname:       Paul    
-    
-Tag(play):
-    name:           Play
-    
-Tag(architecture):
-    name:           Architecture
-    
-Tag(test):
-    name:           Test
-    
-Tag(mvc):
-    name:           MVC    
-    
-Post(firstBobPost):
-    title:          About the model layer
-    postedAt:       2009-06-14
-    author:         bob
-    tags:           
-                    - play
-                    - architecture
-    content:        >
-                    The model has a central position in a Play! application. It is the domain-specific 
-                    representation of the information on which the application operates.
-                     
-                    Martin fowler defines it as :
-                        
-                    Responsible for representing concepts of the business, information about the 
-                    business situation, and business rules. State that reflects the business situation 
-                    is controlled and used here, even though the technical details of storing it are 
-                    delegated to the infrastructure. This layer is the heart of business software.
 
-Post(secondBobPost):
-    title:          Just a test of YABE
-    postedAt:       2009-03-25
-    author:         bob
+User(paulo):
+    email:          paulo@iscte.pt
+    password:       secret
+    fullname:       Paulo    
+
+User(sancho):
+    email:          sancho@iscte.pt
+    password:       secret
+    fullname:       Sancho
+    isAdmin:        true  
+
+User(marinheiro):
+    email:          marinheiro@iscte.pt
+    password:       secret
+    fullname:       Rui Marinheiro
+    isAdmin:        true   
+
+User(jorge):
+    email:          jorgel@iscte.pt
+    password:       secret
+    fullname:       Jorge Louçã
+    isAdmin:        true    
+
+Tag(PCD):
+    name:           PCD
+
+Tag(Programação em Rede):
+    name:           Programação em Rede
+
+Tag(Redes Digitais 2):
+    name:           Redes Digitais 2
+
+Tag(Multimedia):
+    name:           Multimédia
+
+Tag(Gestao):
+    name:           Gestão        
+
+Post(firstmarinheiroPost):
+    title:          Mudança de aula
+    postedAt:       2012-06-14
+    author:         marinheiro
     tags:           
-                    - test
+                    - Redes Digitais 2
     content:        >
-                    Well, it's just a test.
+                    A aula de laboratório que decorreria na sexta-feira dia 16, para os alunos que frequentam a turma de ETI, foi antecipada para a quinta-feira dia 15, para as 11:00.
+                    A aula de laboratório que decorreria na sexta-feira dia 16, para os alunos que frequentam a turma em regime pós-laboral, foi antecipada para a quinta-feira dia 15, para as 18:00.
+                    Estas aulas decorrerão na sala C706 (Laboratorio de Redes).
+
+Post(secondmarinheiroPost):
+    title:          Exame de Redes Digitais 2
+    postedAt:       2012-12-14
+    author:         marinheiro
+    tags:           
+                    - Redes Digitais 2
+    content:        >
+                    O exame foi adiado para dia 17 de Janeiro.
                     
-Post(jeffPost):
-    title:          The MVC application
-    postedAt:       2009-06-06
-    author:         jeff
+Post(jorgel):
+    title:          Data de entrega do trabalho
+    postedAt:       2012-12-14
+    author:         jorge
     tags:           
-                    - play
-                    - architecture
-                    - mvc
+                    - Programação em Rede
     content:        >
-                    A Play! application follows the MVC architectural pattern as applied to the 
-                    architecture of the Web.
-                     
-                    This pattern splits the application into separate layers: the Presentation 
-                    layer and the Model layer. The Presentation layer is further split into a 
-                    View and a Controller layer.
+                    Será dia 12 de dezembro. Estejam atentos!
                     
 Comment(c1):
     author:         Guest
     content:        >
-                    You are right !
+                    Óptimo assim teremos mais tempo!!
     postedAt:       2009-06-14
-    post:           firstBobPost
-    
+    post:           jorgel
+
 Comment(c2):
     author:         Mike
     content:        >
                     I knew that ...
-    postedAt:       2009-06-15
-    post:           firstBobPost    
-    
+    postedAt:       2012-06-14
+    post:           firstmarinheiroPost    
+
 Comment(c3):
     author:         Tom
     content:        >
                     This post is useless ?
-    postedAt:       2009-04-05
-    post:           secondBobPost    
+    postedAt:       2012-06-14
+    post:           firstmarinheiroPost    
