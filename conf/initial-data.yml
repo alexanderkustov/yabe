@@ -26,14 +26,14 @@ User(marinheiro):
 User(jorge):
     email:          jorgel@iscte.pt
     password:       secret
-    fullname:       Jorge Louçã
+    fullname:       Jorge Louca
     isAdmin:        true    
 
 Tag(PCD):
     name:           PCD
 
-Tag(Programação em Rede):
-    name:           Programação em Rede
+Tag(Programacao em Rede):
+    name:           Programacao em Rede
 
 Tag(Redes Digitais 2):
     name:           Redes Digitais 2
@@ -42,18 +42,18 @@ Tag(Multimedia):
     name:           Multimédia
 
 Tag(Gestao):
-    name:           Gestão        
+    name:           Gestao        
 
 Post(firstmarinheiroPost):
-    title:          Mudança de aula
+    title:          Mudanca de aula
     postedAt:       2012-06-14
     author:         marinheiro
     tags:           
                     - Redes Digitais 2
     content:        >
-                    A aula de laboratório que decorreria na sexta-feira dia 16, para os alunos que frequentam a turma de ETI, foi antecipada para a quinta-feira dia 15, para as 11:00.
-                    A aula de laboratório que decorreria na sexta-feira dia 16, para os alunos que frequentam a turma em regime pós-laboral, foi antecipada para a quinta-feira dia 15, para as 18:00.
-                    Estas aulas decorrerão na sala C706 (Laboratorio de Redes).
+                    A aula de laboratorio que decorreria na sexta-feira dia 16, para os alunos que frequentam a turma de ETI, foi antecipada para a quinta-feira dia 15, para as 11:00.
+                    A aula de laboratorio que decorreria na sexta-feira dia 16, para os alunos que frequentam a turma em regime pos-laboral, foi antecipada para a quinta-feira dia 15, para as 18:00.
+                    Estas aulas decorrerao na sala C706 (Laboratorio de Redes).
 
 Post(secondmarinheiroPost):
     title:          Exame de Redes Digitais 2
@@ -69,14 +69,14 @@ Post(jorgel):
     postedAt:       2012-12-14
     author:         jorge
     tags:           
-                    - Programação em Rede
+                    - Programacao em Rede
     content:        >
                     Será dia 12 de dezembro. Estejam atentos!
                     
 Comment(c1):
     author:         Guest
     content:        >
-                    Óptimo assim teremos mais tempo!!
+                    optimo assim teremos mais tempo!!
     postedAt:       2009-06-14
     post:           jorgel
 
