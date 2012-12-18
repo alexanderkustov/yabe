@@ -83,13 +83,13 @@ Comment(c1):
 Comment(c2):
     author:         Mike
     content:        >
-                    I knew that ...
+                    Eu sabia...
     postedAt:       2012-06-14
     post:           firstmarinheiroPost    
 
 Comment(c3):
-    author:         Tom
+    author:         Tomas
     content:        >
-                    This post is useless ?
+                    Este post e util
     postedAt:       2012-06-14
-    post:           firstmarinheiroPost    
+    post:           firstmarinheiroPost 
